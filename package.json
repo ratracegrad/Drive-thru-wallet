@@ -1,0 +1,17 @@
+{
+  "name": "express-and-bootstrap",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "node Server.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "config": "^1.16.0",
+    "cors": "^2.7.1",
+    "errorhandler": "^1.4.2",
+    "express": "latest",
+    "express-validator": "^2.18.0",
+    "path": "^0.12.7",
+    "serve-favicon": "^2.3.0"
+  }
+}

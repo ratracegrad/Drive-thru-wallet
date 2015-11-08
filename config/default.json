@@ -1,0 +1,15 @@
+{
+  "port": 3000,
+  "mongodb": {
+    "instances": [
+      {
+        "host": "localhost",
+        "port": 27017
+      }
+    ],
+    "db": "wallet",
+    "options": {}
+  },
+  "payment_time": "50000",
+  "vendor_name": "Drive Thru Wallet",
+}
