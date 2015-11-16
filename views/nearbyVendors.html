@@ -10,11 +10,6 @@
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="./css/style.css">
 
-        <!--  Script  -->
-        <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>-->
-        <!--<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>-->
-
-
     </head>
 
     <body>
@@ -26,6 +21,7 @@
                     <a href="/userAccount" role="button" class="btn btn-primary">Home</a>
                     <a href="/addCard" class="btn btn-primary"role="button">Add Credit Card</a>
                     <a href="/Profile" class="btn btn-primary" role="button">Profile</a>
+                    <button class="btn btn-primary" role="button" onclick="getWorldPay()">Test</button>
                 </div>
             </div>
 
@@ -201,5 +197,22 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
+        <script>
+            function getWorldPay() {
+                $.ajax( {
+                    url: '/testWordPay',
+                    type: 'GET',
+                    dataType: 'json',
+                    success: function(data) {
+                        console.log('success in calling function testWorldPay');
+                        console.log(data);
+                    },
+                    failure: function(data) {
+                        console.log('failure');
+                        console.log(data);
+                    }
+                })
+            }
+        </script>
     </body>
 </html>
